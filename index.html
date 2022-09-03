@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Onboarding</title>
 </head>
+
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="gallery">
+
+                <input type="radio" name="radio-btn" id="radio01" onclick="slideOne()">
+                <input type="radio" name="radio-btn" id="radio02" onclick="slideTwo()">
+                <input type="radio" name="radio-btn" id="radio03" onclick="slideThree()">
+
+                <div class="slide first">
+                    <img src="./assets/Plant-lover.svg" alt="Plant lover community image">
+                    <h2>Plant lover Community</h2>
+                    <div class="text">
+                        <p>
+                            Find gardening enthusiasts from all over the world
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/In-time.svg" alt="Fast delivery image">
+                    <h2>Get fast & safe delivery</h2>
+                    <div class="text">
+                        <p>
+                            Get good quality products for your plants
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/Ecommerce.svg" alt="Ecommerce image">
+                    <h2>Buy & sell Tools</h2>
+                    <div class="text">
+                        <p>
+                            Buy & sell good quality products for your beautiful plants
+                        </p>
+                    </div>
+                </div>
+
+                <div class="background-nav">
+                    <div class="bg-btn1"></div>
+                    <div class="bg-btn2"></div>
+                    <div class="bg-btn3"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="continue" onclick="next()">Continue</button>
+                <button class="skip" onclick="skip()">Skip</button>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio01" class="manual-btn"></label>
+            <label for="radio02" class="manual-btn"></label>
+            <label for="radio03" class="manual-btn"></label>
+        </div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
 </body>
+
 </html>

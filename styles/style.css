@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #92E3A9;
+}
+
+.container {
+    margin: 25px auto;
+    width: 405px;
+    height: 672px;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.gallery {
+    display: flex;
+    width: 300%;
+    height: 812px;
+}
+
+.gallery input {
+    display: none;
+}
+
+.slide {
+    width: 33%;
+    position: relative;
+    text-align: center;
+    transition: .5s;
+}
+
+.slide img {
+    width: 300px;
+    height: 300px;
+}
+
+.slide h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 31px;
+    margin-top: 2rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide p {
+    width: 315px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 26px;
+    font-size: 18px;
+}
+
+.manual-navigation,
+.background-nav {
+    position: absolute;
+    width: 410px;
+    top: 488px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.background-nav div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.background-nav div:not(:last-child) {
+    margin-right: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue {
+    position: absolute;
+    top: 540px;
+    width: 308px;
+    height: 54px;
+    background-color: #92E3A9;
+    color: #FFF;
+    border: none;
+    box-shadow: 0px 4px 10px #A1C3FC;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.skip {
+    position: absolute;
+    width: 308px;
+    height: 23px;
+    top: 623px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    font-size: 18px;
+    color: #92E3A9;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        display: block;
+    }
+
+    .container {
+        width: 266px;
+        height: 645px;
+        margin: 0 auto;
+    }
+
+    .slide img {
+        width: 260px;
+        height: 280px;
+    }
+
+    .slide h2 {
+        font-size: 20px;
+    }
+
+    .slide {
+        top: 0;
+    }
+
+    .manual-navigation,
+    .background-nav {
+        width: 265px;
+        top: 457px;
+    }
+
+    .manual-navigation {
+        margin-left: 32px;
+    }
+
+    .continue {
+        top: 518px;
+        width: 245px;
+    }
+
+    .skip {
+        top: 600px;
+        width: 245px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 630px) {
+    .container {
+        width: 600px;
+        height: 345px;
+        margin: 0;
+    }
+
+    .slide img {
+        width: 180px;
+        height: 183px;
+    }
+
+    .slide h2 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .slide p {
+        line-height: 21px;
+        margin-top: 1px;
+        font-size: 16px;
+    }
+
+    .manual-navigation,
+    .background-nav {
+        top: 321px;
+        width: 235px;
+    }
+
+    .continue {
+        top: 308px;
+        width: 179px;
+        height: 33px;
+    }
+
+    .skip {
+        top: 280px;
+    }
+}
+
+@media screen and (max-width:480px) and (min-height: 800px) {
+    .container {
+        width: 350px;
+        height: 800px;
+    }
+
+    .slide img {
+        width: 320px;
+        height: 355px;
+    }
+
+    .slide h2 {
+        font-size: 22px;
+    }
+
+    .slide p {
+        font-size: 19px;
+    }
+
+    .manual-navigation,
+    .background-nav {
+        width: 340px;
+        top: 530px;
+    }
+
+    .manual-navigation {
+        margin-left: 32px;
+    }
+
+    .continue {
+        top: 593px;
+    }
+
+    .skip {
+        top: 675px;
+    }
+
+}
